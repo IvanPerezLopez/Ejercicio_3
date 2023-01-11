@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 3.4</title>
+
+        <style>
+            html, body {
+                height: 100%
+            }
+
+            div {
+                float: left;
+                height: 100%;
+            }
+
+            div.menu{
+                width: 25%;
+            }
+
+            div:not(.menu){
+                width: 75%;
+            }
+
+            .menu{
+                background-color: green;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 20px;
+                padding: 0;
+            } 
+
+            li a {
+                display: block;
+                padding: 8px 16px;
+                color: white;
+            }
+
+            li a:hover {
+                background-color: #555;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a target="contenido" href="https://www.esri.es">Esri Espa&ntilde;a</a></li>
+                <li><a target="contenido" href="https://www.esri.es/es-es/cursos-y-master/masters-esri/mastergis-presencial">M&aacute;ster presencial</a></li>
+                <li><a target="contenido" href="https://www.esri.es/es-es/cursos-y-master/masters-esri/mastergis-online">M&aacute;ster online</a></li>
+                <li><a target="contenido" href="https://www.esri.es/es-es/cursos-y-master/masters-esri/experto-gis">Experto en desarrollo GIS</a></li>
+            </ul>
+        </div>
+        <div>
+            <iframe src="https://www.esri.es" name="contenido" height="100%" width="100%"></iframe>
+        </div>
+    </body>
+</html>
